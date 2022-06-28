@@ -1,0 +1,24 @@
+
+    <div class="container-all">
+        <label class="label-tel">Numero de Telephone</label>
+        <div class="d-flex align-items-center  form-control group-phone">
+            <div>
+                <span><li class = "flag-icon flag-icon-{{countrySelectIso}} "></li></span>
+                <select class="border-0 select-numtel" [(ngModel)] = "countrySelected" (change) = "changeCountry($event)">
+                    <option *ngFor="let c of country" [value] = "c.name">{{c.name}}</option>
+                </select>
+            </div>
+            <input class="border-0 input-numtel" name = "Telnum" type="text" placeholder="{{defaultTel}}" [(ngModel)]="txtTel"  (keyup)="emit(keyword.value);" #keyword />
+            <span class="container-validator" *ngIf="isTyping">
+                <span *ngIf="isCorrect; else condition1">&#10003; Valid </span>
+                <ng-template #condition1>× Invalid</ng-template>
+            </span>
+        </div>
+        
+    </div>
+    <!-- <span><li class = "flag-icon flag-icon-{{countrySelected[8].iso}}  ms-3"></li></span> -->
+    <!-- <p>{{errorMessage}}</p> -->
+
+    
+
+

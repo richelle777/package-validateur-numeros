@@ -1,0 +1,61 @@
+
+.container{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+.container > div:nth-child(2) > input{
+    height: 30px;
+    border-radius: 6px;
+    color: #e0115f;
+
+}
+.container > div:nth-child(1) > select{
+    height: 35px;
+    border-radius: 6px;
+    color: #e0115f;
+    width: 50px;
+}
+.container-validator{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: red;
+    display: inline;
+}
+
+.container-validator > span:nth-child(1){
+    color: green;
+}
+.container-all{
+    margin-left: 30px;
+}
+/* 
+   
+p{
+margin-left : 70px;
+color : red;
+}
+.indicative{
+    color: grey;
+    margin-left: 10px;
+} */
+
+
+.input-numtel:focus-visible,
+.select-numtel:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.group-phone{
+    width: fit-content;
+    min-width: 200px;
+    max-width: max-content;
+}
+.group-phone:focus-within{
+    box-shadow: 0px 0px 3px #318ce7;
+}
+.label-tel{
+    margin-bottom: 8px;
+    display: block;
+}

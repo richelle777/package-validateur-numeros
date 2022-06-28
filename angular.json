@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/flag-icon-css/css/flag-icons.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -97,6 +99,37 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "intl-input-isj-isi-three": {
+      "projectType": "library",
+      "root": "projects/intl-input-isj-isi-three",
+      "sourceRoot": "projects/intl-input-isj-isi-three/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/intl-input-isj-isi-three/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/intl-input-isj-isi-three/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/intl-input-isj-isi-three/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/intl-input-isj-isi-three/src/test.ts",
+            "tsConfig": "projects/intl-input-isj-isi-three/tsconfig.spec.json",
+            "karmaConfig": "projects/intl-input-isj-isi-three/karma.conf.js"
           }
         }
       }

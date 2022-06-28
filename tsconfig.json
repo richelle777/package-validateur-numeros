@@ -8,6 +8,12 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "intl-input-isj-isi-three": [
+        "dist/intl-input-isj-isi-three/intl-input-isj-isi-three",
+        "dist/intl-input-isj-isi-three"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
