@@ -7,7 +7,9 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "inlineSources": true,
+    "resolveJsonModule": true, "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "intl-input-isj-isi-three": [
         "dist/intl-input-isj-isi-three/intl-input-isj-isi-three",

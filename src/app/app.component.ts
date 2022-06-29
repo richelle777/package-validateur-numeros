@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projet';
+  testInput(e:any){
+    console.log(e);
+  }
 }
+
